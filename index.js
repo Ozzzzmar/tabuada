@@ -5,14 +5,9 @@ console.log("Digite um número para saber sua tabuada:");
 
 process.stdin.on("data", function(data){
     if(numero){
-        numero = Number(da);
+        numero = Number(data.toString().trim());
         for (let i = 0; i < tabuada.length; i++) {
-            numero = numero * tabuada[i];
-            console.log(numero)
-            
+            console.log(numero + " x " + tabuada[i] + " = " + numero * tabuada[i]);
         }
     }
-
-
-
 });
